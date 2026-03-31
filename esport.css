@@ -1,0 +1,47 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    background-color: #3b487510;
+    margin: 0;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.gry {
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    background: #3B4875;
+    text-align: center;
+    border: 1px solid #3b487542;
+}
+
+.gry:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#gry {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gry-foty {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gry p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
