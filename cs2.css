@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #111827;
+    margin: 0;
+    color: white;
+    line-height: 1.6;
+}
+
+#cs2-banner {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    display: block;
+}
+
+#cs2-banner img {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+#wybor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.wybor {
+    background: #000000d0;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    border: 1px solid #030303;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wybor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 140, 0, 0.3);
+}
+
+.wybor-foty, .wybor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #ff8c00;
+}
+
+.wybor p {
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    #cs2-banner, #cs2-banner img {
+        max-height: 200px;
+    }
+
+    #wybor {
+        padding: 40px 15px;
+    }
+
+    .wybor {
+        width: 100%;
+    }
+
+    .wybor-foty, .wybor img {
+        height: 250px;
+    }
+
+    .wybor p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    #cs2-banner, #cs2-banner img {
+        max-height: 500px;
+    }
+
+    #wybor {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    .wybor {
+        width: 350px;
+    }
+
+    .wybor-foty, .wybor img {
+        height: 220px;
+    }
+
+    .wybor p {
+        font-size: 1.5rem;
+    }
+}
