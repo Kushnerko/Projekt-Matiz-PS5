@@ -93,8 +93,6 @@
     }
 }
 
-/* WIDESCREEN  */
-
 @media (min-width: 1400px) {
     #dota2-banner, #dota2_banner img {
         max-height: 500px; 
