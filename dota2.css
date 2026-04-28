@@ -1,0 +1,117 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212; 
+            color: #ffffff; 
+            line-height: 1.6;
+        }
+
+        #dota2-banner {
+            min-height: 200px;
+        }
+
+        #dota2-banner img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+
+        #wybor {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+        }
+
+        .wybor {
+            background-color: #1e1e1e;
+            text-decoration: none;
+            color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wybor:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(229, 57, 53, 0.2);
+        }
+
+        .wybor img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid #e53935;
+        }
+
+        .wybor p {
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0a0a0a;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+    #banner, #banner img {
+        max-height: 200px; 
+    }
+
+    #gry {
+        padding: 40px 15px; 
+    }
+
+    .gry {
+        flex-direction: column; 
+    }
+
+    .gry img, .gry-foty {
+        width: 100%; 
+        height: 250px;
+    }
+
+    .gry p {
+        padding: 20px;
+        font-size: 1.3rem; 
+        text-align: center; 
+    }
+}
+
+/* WIDESCREEN  */
+
+@media (min-width: 1400px) {
+    #banner, #banner img {
+        max-height: 500px; 
+    }
+
+    #gry {
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 80px 0; 
+    }
+
+    .gry img, .gry-foty {
+        width: 400px; 
+        height: 250px; 
+    }
+
+    .gry p {
+        font-size: 1.8rem; 
+    }
+}
