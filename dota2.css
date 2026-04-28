@@ -69,24 +69,24 @@
             color: #666;
         }
         @media (max-width: 768px) {
-    #banner, #banner img {
+    #dota2-banner, #dota2_banner img {
         max-height: 200px; 
     }
 
-    #gry {
+    #wybor {
         padding: 40px 15px; 
     }
 
-    .gry {
+    .wybor {
         flex-direction: column; 
     }
 
-    .gry img, .gry-foty {
+    .wybor img, .gry-foty {
         width: 100%; 
         height: 250px;
     }
 
-    .gry p {
+    .wybor p {
         padding: 20px;
         font-size: 1.3rem; 
         text-align: center; 
@@ -96,22 +96,22 @@
 /* WIDESCREEN  */
 
 @media (min-width: 1400px) {
-    #banner, #banner img {
+    #dota2-banner, #dota2_banner img {
         max-height: 500px; 
     }
 
-    #gry {
+    #wybor {
         max-width: 1200px; 
         margin: 0 auto; 
         padding: 80px 0; 
     }
 
-    .gry img, .gry-foty {
+    .wybor img, .gry-foty {
         width: 400px; 
         height: 250px; 
     }
 
-    .gry p {
+    .wybor p {
         font-size: 1.8rem; 
     }
 }
