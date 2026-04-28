@@ -5,6 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 body {
     background-color: #111827;
     margin: 0;
@@ -78,7 +79,7 @@ footer {
     font-size: 0.9rem;
     color: #888;
 }
-
+/* TELEFONY*/
 @media (max-width: 768px) {
     #cs2-banner, #cs2-banner img {
         max-height: 200px;
@@ -100,7 +101,7 @@ footer {
         font-size: 1.2rem;
     }
 }
-
+/* WIDESCREEN */
 @media (min-width: 1400px) {
     #cs2-banner, #cs2-banner img {
         max-height: 500px;
