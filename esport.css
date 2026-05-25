@@ -86,6 +86,7 @@ footer {
     font-size: 0.9rem;
     color: #888;
 }
+
 .footer-links {
     margin-top: 10px;
 }
@@ -95,9 +96,6 @@ footer {
     text-decoration: none;
     margin: 0 10px;
 }
-
-
-/* TELEFONY*/
 
 @media (max-width: 768px) {
     #banner, #banner img {
@@ -123,8 +121,6 @@ footer {
         text-align: center; 
     }
 }
-
-/* WIDESCREEN  */
 
 @media (min-width: 1400px) {
     #banner, #banner img {

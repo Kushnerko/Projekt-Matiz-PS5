@@ -1,36 +1,47 @@
-const daneKategorii = [
-    {
-        tytul: "TEAMS",
-        obrazek: "virtus.jpg",
-        link: "Teams.html"
-    },
-    {
-        tytul: "TOURNAMENTS",
-        obrazek: "major.jpg",
-        link: "Tournaments.html"
-    },
-    {
-        tytul: "UPDATES",
-        obrazek: "cs2-updates.jfif",
-        link: "Updates.html"
-    },
-];
-const kontenerKarty = document.getElementById("wybor");
+class Cs2MenuRenderer {
+    constructor(rootId) {
+        this.root = document.getElementById(rootId);
+        this.options = [
+            { href: 'teams.html', src: 'teams.jpg', alt: 'Teams', text: 'TEAMS' },
+            { href: 'tournaments.html', src: 'tournaments.jpg', alt: 'Tournaments', text: 'TOURNAMENTS' },
+            { href: 'updates.html', src: 'updates.jpg', alt: 'Updates', text: 'UPDATES' }
+        ];
+    }
 
-function generujKarty() {
-    let htmlDoWstawienia = ""; 
+    init() {
+        const banner = document.createElement('section');
+        const img = document.createElement('img');
+        img.src = 'csbaner.png';
+        img.alt = 'CS2 Banner';
+        banner.appendChild(img);
+        this.root.appendChild(banner);
 
-    daneKategorii.forEach(function(kategoria) {
+        const nav = document.createElement('section');
+        nav.id = 'wybor';
         
-        htmlDoWstawienia += `
-            <a href="${kategoria.link}" class="wybor">
-                <img src="${kategoria.obrazek}" alt="${kategoria.tytul}">
-                <p>${kategoria.tytul}</p>    
-            </a>
-        `;
-    });
-    kontenerKarty.innerHTML = htmlDoWstawienia;
+        this.options.forEach(o => {
+            const a = document.createElement('a');
+            a.href = o.href;
+            a.className = 'wybor';
+
+            const i = document.createElement('img');
+            i.src = o.src;
+            i.className = 'wybor-foty';
+            i.alt = o.alt;
+
+            const p = document.createElement('p');
+            p.textContent = o.text;
+
+            a.appendChild(i);
+            a.appendChild(p);
+            nav.appendChild(a);
+        });
+        this.root.appendChild(nav);
+
+        const footer = document.createElement('footer');
+        footer.innerHTML = '<p>Made by: Matiz Krol Szos</p>';
+        this.root.appendChild(footer);
+    }
 }
 
-
-generujKarty();
+new Cs2MenuRenderer('root').init();
