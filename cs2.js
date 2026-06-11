@@ -2,16 +2,18 @@ class Cs2MenuRenderer {
     constructor(rootId) {
         this.root = document.getElementById(rootId);
         this.options = [
-            { href: 'teams.html', src: 'teams.jpg', alt: 'Teams', text: 'TEAMS' },
-            { href: 'tournaments.html', src: 'tournaments.jpg', alt: 'Tournaments', text: 'TOURNAMENTS' },
-            { href: 'cs2updates.html', src: 'updates.jpg', alt: 'Updates', text: 'UPDATES' }
+            { href: 'teams.html', src: 'cs2-vertical.jpg', alt: 'Teams', text: 'TEAMS' },
+            { href: 'tournaments.html', src: 'major.jpg', alt: 'Tournaments', text: 'TOURNAMENTS' },
+            { href: 'cs2updates.html', src: 'cs2-updates.jfif', alt: 'Updates', text: 'UPDATES' }
         ];
     }
 
     init() {
         const banner = document.createElement('section');
+        banner.id = 'cs2-banner';
+        
         const img = document.createElement('img');
-        img.src = 'csbaner.png';
+        img.src = 'banerzajaja.png';
         img.alt = 'CS2 Banner';
         banner.appendChild(img);
         this.root.appendChild(banner);
