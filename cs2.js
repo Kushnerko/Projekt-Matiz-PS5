@@ -4,7 +4,7 @@ class Cs2MenuRenderer {
         this.options = [
             { href: 'teams.html', src: 'teams.jpg', alt: 'Teams', text: 'TEAMS' },
             { href: 'tournaments.html', src: 'tournaments.jpg', alt: 'Tournaments', text: 'TOURNAMENTS' },
-            { href: 'updates.html', src: 'updates.jpg', alt: 'Updates', text: 'UPDATES' }
+            { href: 'cs2updates.html', src: 'updates.jpg', alt: 'Updates', text: 'UPDATES' }
         ];
     }
 
