@@ -57,10 +57,17 @@ class MainPageRenderer {
 
     renderFooter() {
         const footer = document.createElement('footer');
+        
+        const contactLink = document.createElement('a');
+        contactLink.href = 'contact.html';
+        contactLink.textContent = 'Kliknij tutaj, aby przejść do formularza kontaktowego';
+        
         const pFooter = document.createElement('p');
         pFooter.textContent = 'Made by: Matiz Krol Szos';
         
+        footer.appendChild(contactLink);
         footer.appendChild(pFooter);
+        
         this.root.appendChild(footer);
     }
 }
